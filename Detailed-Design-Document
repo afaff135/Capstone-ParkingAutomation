@@ -1,0 +1,60 @@
+
+
+Parking Automation
+
+Design Document
+
+Kyle Fields, Fahim Ali, Michael Gallagher
+
+
+ 
+Introduction
+Parking in a busy parking lot causes lots of frustration and requires patience with both other drivers travelling through the parking lot and the time that it takes to find an open parking space. An American can spend seventeen hours every year looking for an open parking space. INRIX, a transportation analytics specialist, states that each driver will waste approximately $345 by searching for parking spaces. Finding a parking space in a timely manner can be the difference between making or missing a meeting, dropping off kids at school on time, and making an interview for a new job on time. 
+The device that solves the time-consuming adventure of finding a parking space is the automated parking system. By using sensors to detect whether a car is occupying a space or not, the driver of an entering vehicle can quickly determine where to park by simply checking their parking application. When a car leaves a parking space, the application will automatically update to indicate that there is a new open space. This allows for a smooth transition between entering a parking lot and finding a parking space without the need of searching every floor and section just to find out a parking garage is full and having to go to a whole separate lot. The automated parking system can drastically decrease the time of finding a parking space, preventing parking from becoming a reason for a late entrance on any occasion.
+	Now that the Summer is over, the team is abiding by the schedule set forth in the Spring semester of 2021. The completed prototype will still be ready to present by December, with an early prototyping stage set to begin in October. By the end of November, the final documentation and presentation will be completed. By the ninth of December, the prototype will be ready to present.
+
+Design Description
+The purpose of the parking automation is to provide the user with an easy-to-use system that gives the number of available spaces to the user. The device will use real time data with notifications of how many empty parking spaces on each level of a floored garage. The parking system has no capacity limit, and the reaction time of a new available parking space will be within seconds of the space becoming available to the user. The device battery limit will not adversely affect the hardware’s ability to function by having the hardware be as low power as possible. 
+ 
+The block system design diagram below indicates the general design flow of the automated parking process in action.
+Functional Requirements
+1.     The parking system shall give drivers live, real-time data on status of each parking lot.
+2.     The parking system shall notify drivers of unavailable spaces.
+3.     The parking system shall notify drivers if there is an accident on parking lot (collisions).
+4.     The parking system shall notify drivers if parking lot/garage is out of service.
+5.     The parking system shall notify drivers of empty parking spaces. 
+6.     The parking system shall notify drivers of how many empty parking spaces there are per level.
+Cross Functional Requirements
+1.     The parking system shall have no capacity limit.
+2.     The parking system shall send sensor within seconds parking spot becomes available.
+3.     The parking system shall be sensitive to motion to recognize if parking space is occupied or empty.  
+4.     The parking system shall have a magnetic field detector which confirms that the shadow has been produced by a metal vehicle rather than a passing cloud or pausing pedestrian. 
+5.     The parking system shall be powered by long-life battery with minimal energy consumption form the active hardware.
+ 
+The general design schematic for the hardware.
+	Functionally, a smaller version will be constructed as a proof of concept before the full scale is constructed. To power both editions of the project, rechargeable battery modules will be attached to ensure power for long durations of usage. The battery will be directly attached to the Arduino Uno R3 board. For the smaller version, a servo motor will act as a visual representation of a blocker for vehicles leaving and entering as to get an idea of where the sensors will be placed. Two sensors (either IR or ultrasonic depending on testing results) will be used to detect oncoming and outgoing vehicles to the parking spaces. As indicated in the design, these will be directly connected to the Arduino, which is projecting the statistics onto an LCD screen easily visible to the drivers of the vehicles. The driver can then assess if they should use the parking lot they are at or another without having to enter the actual parking area.
+Budget
+A base cost of $63.94 for the research, design, and implantation of one device makes the product affordable as a basis. The Arduino used as the development kit for the device was provided and is not included in the costs of design. It is assumed that the team will use an internal source for 3D printing (the university 3D printers).
+The Project budget is shown in the table below:
+Item Description	Item Unit Cost	Item Quantity	Total
+Arduino Uno R3	-	1	$0.00
+Servo Motor	$8.99	1	$8.99
+IR Sensors	$10.99	2	$21.98
+LCD display	$7.99	1	$7.99
+Ultrasonic Sensor pack (10)	$14.99	1	$14.99
+Servo motor pack (5)	$9.99	1	$9.99
+Adafruit PowerBoost 1000 Charger	$23.01	1	$23.01
+Total Cost			$86.95
+
+Schedule
+ 
+Conclusion
+	Throughout this project, it has come to light that the garage parking automation is necessary to improve quality of life within communities that have this sort of issue. This project feasibility is fair, as the budget for the first prototype and research is valued at around $65. The implementation plan that is proposed in the schedule is on par with what we need to complete in each exact week and time. This project would be able to be implemented after the initial prototype is done to basically any parking garage that requires it. The overall need for this project and system is to improve the struggle that many people face when entering a parking garage and finding an open parking space. 
+References
+1.	McCoy, Kevin. "Drivers Spend an Average of 17 Hours a Year Searching for Parking Spots." 12 July 2017. CNBC. Article. 26 March 2021.
+2.	Stop Wasting Time Searching for Parking. Park Smarter. n.d. 26 March 2021. <https://blog.spothero.com/park-smarter-parking-search-time/>.
+3.	“Amazon.Com: 4Pcs SG90 9g Micro Servos for RC Robot Helicopter Airplane Controls Car Boat: Toys & Games.” Amazon, www.amazon.com/Micro-Servos-Helicopter-Airplane-Controls/dp/B07MLR1498/ref=sr_1_1_sspa?crid=1HGKOHBK22KVG&dchild=1&keywords=servo+motors&qid=1620184305&sprefix=servo+%2Caps%2C178&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFGRkgxSDJES0FHSUImZW5jcnlwdGVkSWQ9QTAwOTg1NzkxRllROFdVRTRUMzEyJmVuY3J5cHRlZEFkSWQ9QTAzMDM1MDMxR01XRjFNMkU3Q0VEJndpZGdldE5hbWU9c3BfYXRmJmFjdGlvbj1jbGlja1JlZGlyZWN0JmRvTm90TG9nQ2xpY2s9dHJ1ZQ==. Accessed 5 May 2021.
+4.	“Amazon.Com: 10PCS IR Infrared Obstacle Avoidance Sensor Module for Arduino Smart Car Robot: Computers & Accessories.” Amazon, www.amazon.com/Infrared-Obstacle-Avoidance-Sensor-Arduino/dp/B07T91JXHW/ref=sr_1_8?crid=YA1GUYNTNDGT&dchild=1&keywords=ir+sensors&qid=1620184008&sprefix=IR+sansors%2Caps%2C337&sr=8-8. Accessed 5 May 2021.
+5.	“Amazon.Com: Gikfun Obstacle Avoidance IR Infrared Sensor Module Reflective Photoelectric Light Intensity DIY Kit for Arduino UNO (Pack of 5pcs) EK1254x5: Home Improvement.” Amazon, www.amazon.com/Gikfun-avoidance-Reflective-Photoelectric-Intensity/dp/B07FJLMLVZ/ref=sr_1_5?crid=YA1GUYNTNDGT&dchild=1&keywords=ir+sensors&qid=1620184008&sprefix=IR+sansors%2Caps%2C337&sr=8-5. Accessed 5 May 2021.
+6.	“Amazon.Com: SunFounder IIC I2C TWI 1602 Serial LCD Module Display for Arduino R3 Mega 2560 16x2: Computers & Accessories.” Amazon, www.amazon.com/SunFounder-Serial-Module-Display-Arduino/dp/B019K5X53O/ref=sr_1_1_sspa?crid=AU656P6WFAFD&dchild=1&keywords=lcd+display+arduino&qid=1620184390&sprefix=lcd+display%2Caps%2C191&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUExWlQ3WU0wTzFHWU1XJmVuY3J5cHRlZElkPUEwNDAyMDQ3MVpXWjcxRkpJWDkwNiZlbmNyeXB0ZWRBZElkPUEwNjg1NDY1M0hTTDVSTVhZQlNUQyZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU=. Accessed 5 May 2021.
+7.	Voxelab Aquila 3D Printer with Full Alloy Frame, Removable Build Surface Plate, Fully Open Source and Resume Printing Function Build Volume 8.66x8.66x9.84in: Amazon.Com: Industrial & Scientific. www.amazon.com/Voxelab-Removable-Printing-Function-8-66x8-66x9-84in/dp/B08SPXYND4/ref=sr_1_5? Accessed 5 May 2021.
