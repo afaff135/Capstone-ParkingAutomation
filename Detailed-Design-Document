@@ -37,19 +37,22 @@ Budget
 A base cost of $63.94 for the research, design, and implantation of one device makes the product affordable as a basis. The Arduino used as the development kit for the device was provided and is not included in the costs of design. It is assumed that the team will use an internal source for 3D printing (the university 3D printers).
 The Project budget is shown in the table below:
 Item Description	Item Unit Cost	Item Quantity	Total
-Arduino Uno R3	-	1	$0.00
-Servo Motor	$8.99	1	$8.99
-IR Sensors	$10.99	2	$21.98
-LCD display	$7.99	1	$7.99
-Ultrasonic Sensor pack (10)	$14.99	1	$14.99
-Servo motor pack (5)	$9.99	1	$9.99
-Adafruit PowerBoost 1000 Charger	$23.01	1	$23.01
-Total Cost			$86.95
+Arduino Uno R3              -	            1	        $0.00
+Servo Motor	          $8.99	            1	        $8.99
+IR Sensors	         $10.99	            2	       $21.98
+LCD display	          $7.99	            1	        $7.99
+Ultrasonic Sensor pack   $14.99	            1	       $14.99
+Servo motor pack (5)	  $9.99	            1	        $9.99
+Adafruit PowerBoost 	 $23.01	            1	       $23.01
+Total Cost			                       $86.95
 
 Schedule
- 
+ Found in word document version
 Conclusion
 	Throughout this project, it has come to light that the garage parking automation is necessary to improve quality of life within communities that have this sort of issue. This project feasibility is fair, as the budget for the first prototype and research is valued at around $65. The implementation plan that is proposed in the schedule is on par with what we need to complete in each exact week and time. This project would be able to be implemented after the initial prototype is done to basically any parking garage that requires it. The overall need for this project and system is to improve the struggle that many people face when entering a parking garage and finding an open parking space. 
+
+
+
 References
 1.	McCoy, Kevin. "Drivers Spend an Average of 17 Hours a Year Searching for Parking Spots." 12 July 2017. CNBC. Article. 26 March 2021.
 2.	Stop Wasting Time Searching for Parking. Park Smarter. n.d. 26 March 2021. <https://blog.spothero.com/park-smarter-parking-search-time/>.
